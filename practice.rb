@@ -28,16 +28,37 @@ blockchain = [
 
 # 👇👇👇 Your code HERE 👇👇👇
 
+for transaction in bitcoins
+
 if transaction["from_user"] == "ben"
   bens_balance = bens_balance - transaction["amount"]
+  
 elseif transaction["from_user"] == "brian"
-brians_balance = brians_balance - transaction["amount"]
+  brians_balance = brians_balance - transaction["amount"]
+
 elseif transaction["from_user"] == "evan"
-evans_balance = anthonys_balance - transaction["amount"]
+evans_balance = evans_balance - transaction["amount"]
+
+elseif transaction["from_user"] == "anthony"
+anthonys_balance = anthonys_balance - transaction["amount"]
 end
 
 
 
+if transaction["to_user"] == "ben"
+  bens_balance = bens_balance + transaction["amount"]
+  
+elseif transaction["to_user"] == "brian"
+  brians_balance = brians_balance + transaction["amount"]
+
+elseif transaction["to_user"] == "evan"
+evans_balance = evans_balance + transaction["amount"]
+
+elseif transaction["to_user"] == "anthony"
+anthonys_balance = anthonys_balance + transaction["amount"]
+end
+
+end
 
 
 
