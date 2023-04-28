@@ -27,3 +27,18 @@ blockchain = [
 # Anthony's KelloggCoin balance is 2650
 
 # 👇👇👇 Your code HERE 👇👇👇
+
+if transaction["from_user"] == "ben"
+  bens_balance = bens_balance - transaction["amount"]
+elseif transaction["from_user"] == "brian"
+brians_balance = brians_balance - transaction["amount"]
+elseif transaction["from_user"] == "evan"
+evans_balance = anthonys_balance - transaction["amount"]
+end
+
+
+
+
+
+
+
